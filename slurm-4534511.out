@@ -1,0 +1,92 @@
+/var/spool/slurmd/job4534511/slurm_script: line 2: SBATCH: command not found
+/var/spool/slurmd/job4534511/slurm_script: line 3: SBATCH: command not found
+/var/spool/slurmd/job4534511/slurm_script: line 4: SBATCH: command not found
+/var/spool/slurmd/job4534511/slurm_script: line 5: SBATCH: command not found
+Start date: Mon Sep 30 18:41:37 MSK 2024
+mpirun ./syomin_two_mesh -help
+Input args:
+"./syomin_two_mesh" "-help" 
+
+Parameters info:
+	save_pmf_strategy   : 0                               <Choose save to checkpoint strategy: 0 - many-to-one-to-file, 1 - many-to-file. Be careful, strategy 1 doesn't work properly on some clusters>
+	mndmn_lin_sol_prefix: mndmn                           <Prefix used in linear solver database for monodomain solvers>
+	length_unit         : 10                              <Length in mm of 1 domain scale division for grid representation>
+	mech_lin_sol_prefix : mech                            <Prefix used in linear solver database for mechanical solvers>
+	ion_initial_states  :                                 <Specify initial state of cell-level ion model variables, e.g. "A1 = 0.03; A2 = 0.03; c = 0.1; c_sr = 1000.0; pv = 0.6; R = 0.15; v = 0.05;">
+	mech_lin_sol_nm     : inner_mptiluc                   <Type of linear solver used for mechanics>
+	v_init              : -80                             <Initial action potential>
+	save_its            : 20                              <Number of monodomain iterations between consecutive savings of the results for visualization>
+	with_mech_feedback  : 1                               <Should we account mechano-electrical feedback?>
+	conductivity        : 0.5 4.5                         <Specify isotropic and anisotropic parts [mm^2/ms]: Dmi Dma>
+	k_spr_fastening     : 4                               <Spring stiffness on on the right border while fastening [kPa/mm]>
+	stretch_k           : 0.01                            <Increment of the pressure at the free boundary [kPa/ms]>
+	stretch_bnd         : 1                               <Should we stretch the free edge?>
+	save_act_time       : 1                               <Should we save activation time?>
+	show_nlin_sol_params: 0                               <Will print list of KinSol parameters and exit program if set to true>
+	with_bulk_term      : 1                               <Should we add artifitial near-incompressible bulk term in mechanical potential?>
+	with_true_incompres : 0                               <Should we use incompressible statement based on Lagrange multiplier?>
+	scenario            : 0                               <Set computation scenario, 0 - slab contraction, 1 - venticular cycle>
+	axis_sizes_ep       : 6                               <Specify mesh step for electrophysiology grid, number of cells per thickness>
+	fix_part_bnd        : 0                               <Should we fix all boundary edge or just part?>
+	hemo_params         :                                 <Specify hemo model parameter values>
+	with_exponential_titin: 1                               <Should we use exponential form of titin tensions (or classical instead)?>
+	zero_velocity       : 0                               <Should we set zero deformation velocities in cell models?>
+	t                   : 1000                            <End solution time>
+	prob_iters          : 1 10 100 1000                   <Amount of time iterations per base period for mechanics, monodomain, cell electrophysiology and hemodynamics>
+	nlin_strategy       : 0                               <Choose strategy: 0 for classical Newton, 1 for Newton with linesearch strategy>
+	stretch_bnd_spring_fastening_time: 100                             <Time [ms] when we should start to apply springs fastening on the right border, if the value is negative then the condition will never be imposed>
+	nlin_tol            : 1e-08 1e-08                     <Specify scaled_step_tolerance and absolute_tolerances for nonlinear solver>
+	nlin_maxit          : 200                             <Specify maximal number of nonlinear iterations>
+	t_init              : 0                               <Start solution time>
+	hemo_params_file    :                                 <Specify hemodynamics parameters from file>
+	ion_params          :                                 <Specify ion model parameter values, e.g. "pf1 = 1.0;">
+	k_spr_und           : 20                              <Spring stiffness on robin-like underside (or any other alternative) boundary [kPa/mm]>
+	with_activation     : 1                               <Should we account active part in mechanics?>
+	with_isochoric_decomposition: 1                               <Should we replace elastic potetntial on isochoric-deviatoric ones?>
+	max_fail_restart_level: 4                               <Maximal number restarts with time decreasing on fails>
+	mech_time_scheme    : 0                               <Set type of 3D mechanics time scheme: 0 - QUASISTATIC, 1 - DYNAMIC with implicit central differences, 2 - BETA-NEWMARK>
+	act_prms            : 0 1 1 0 0 1 0                   <Active tension weights to establish a compromise between accuracy and stability, { w_delta_ode w_delta_x w_theta_ode w_theta_x w_theta_x_delta_ode w_theta_x_delta_x w_Ta_stab_term }>
+	density             : 1                               <Density of material [mg/mm^3]>
+	mount_type          : 1                               <Set type of mounting for fixed boundary: 0 - DIRICHLET, 1 - SPRING>
+	quad_order_mech     : 5                               <Quadrature formula order used for mechanical integrals approximation and ODE degrees of freedom distribution>
+	k_spr               : 20                              <Spring stiffness on robin-like boundary [kPa/mm]>
+	ufem                : P2                              <Finite element used for displacement disretization (avail P1, P2, P3, MINI1, MINI2)>
+	save_fiber_velocity : 0                               <Should we save first time derivative of fiber stretches?>
+	length_scales       : 9 9 1                           <Sizes of a slab expressed in length_unit units>
+	ion_model           : DYNAMIC_SyominTsaturyan_theta   <Name of Syomin-Tsaturyan variant of ion model>
+	mesh_file_mech      :                                 <Use specific mesh for mechanics instead autogenerated (required if load from checkpoint)>
+	hemo_init_states_file:                                 <Specify hemodynamics initial states from file>
+	min_time_scale      : 0.01                            <Minimal time scale to be used>
+	mesh_file_ep        :                                 <Use specific mesh for electrophysiology instead autogenerated (required if load from checkpoint)>
+	save_dir            : ./                              <Directory to save results>
+	mndmn_lin_params    :                                 <List of pairs of parameter-values of monodomain linear solver splitted by space>
+	mesh_file_uni       :                                 <Specify file for same mesh for both mechanics and electrophysiology>
+	bulk_prms           : 50                              <Specify bulk modulus kappa [kPa]>
+	pfem                : P1                              <Finite element used for pressure disretization in incompressible formulation (avail P0, P1, P2, MINI1, MINI2), is not used if "with_true_incompres" = 0>
+	elastic_prms        : 0.55 2.85                       <Specify mu [kPa] and b [1] coefs>
+	quad_order_ep       : 5                               <Quadrature formula order used for monodomain integrals approximation and for ODE degrees of freedom distribution>
+	quad_order_ep_stif  : -1                              <Quadrature formula order used for approximation of stiffness matrix in monodomain equation, if negative than "quad_order_ep" value is used>
+	quad_order_ep_stim  : -1                              <Quadrature formula order used for approximation stimulus action in monodomain equation, if negative than "quad_order_ep" value is used>
+	quad_order_ep_mass  : -1                              <Quadrature formula order used for approximation of mass term in monodomain equation, if negative than "quad_order_ep" value is used>
+	stims               : Slab{ 0 0 0 10 90 10 40 0 1 1 1e20 }<Add stimuli as straight parallelepipeds (from {x0 y0 z0} to {x1 y1 z1}) with amplitude I period T, start time T_st, action time t_stat and settle time t_set: x0 y0 z0 x1 y1 z1 I T_st t_stat t_set T>
+	dt                  : 1                               <Base modeled period of time, ms>
+	load_checkpoint     : 0                               <Read state from loadable meshes?>
+	save_prefix         : model                           <Name prefix for files will be saved>
+	view_ion            :                                 <What ion model parameters we should save in view file (interpreted as space separated list, or choose all if entered "1")?>
+	save_fiber_stretch  : 1                               <Should we save fiber stretches?>
+	save_fiber_acceleration: 0                               <Should we save second time derivative of fiber stretches?>
+	save_stat_delta     : 0                               <Shold we save quasistationary delta?>
+	axis_sizes_mech     : 3                               <Specify mesh step for mechanical mesh, number of cells per thickness>
+	save_its_checkpoint : -1                              <Number of monodomain iterations between consecutive savings of the checkpoints>
+	nlin_params         : MaxSetupCalls 1 MaxSubSetupCalls 1 EtaForm 3 EtaConstValue 1e-5<List of pairs of parameter-values of nonlinear solver splitted by space>
+	mech_continuation_factor: 0                               <Factor 's' used to initial guess construction by formula u_next = u_cur + s*dt*v_cur>
+	fix_underside       : 1                               <Should we fix undeside (side at z = 0) of the slab?>
+	hemo_init_states    :                                 <Specify initial state of hemo model variables>
+	lin_sol_db          : solver_db.xml                   <INMOST linear solvers database>
+	try_repair_time_scale_its: 10                              <Number of consequative successive time iterations to try increase time step>
+	mech_strict_dirichlet: 0                               <Should we project every solution on dirichlet conditions?>
+	view_ion_average    : A1 c delta n                    <What ion model parameters we should average and save in view file (interpreted as space separated list, or choose all if entered "1")?>
+	mech_lin_params     :                                 <List of pairs of parameter-values of mechanical linear solver splitted by space>
+	restart_time_scale  : 0.5                             <Time scale on restart for solver fail>
+	mndmn_lin_sol_nm    : inner_mptiluc                   <Type of linear solver used for monodomain problem>
+End date: Mon Sep 30 18:41:38 MSK 2024

@@ -1,0 +1,28 @@
+/var/spool/slurmd/job4534515/slurm_script: line 2: SBATCH: command not found
+/var/spool/slurmd/job4534515/slurm_script: line 3: SBATCH: command not found
+/var/spool/slurmd/job4534515/slurm_script: line 4: SBATCH: command not found
+/var/spool/slurmd/job4534515/slurm_script: line 5: SBATCH: command not found
+Start date: Mon Sep 30 19:22:15 MSK 2024
+mpirun ./syomin_two_mesh -save_dir /home/marukhin_a_v/projects/carnum/cmake-build-Release/examples/SyominModel/results/ -stims Slab{ 0 0 0 30 5 10 25 100 1 1 2000
+} -axis_sizes_mech 4 -axis_sizes_ep 10 -dt 1 -prob_iters 1
+20 100 100 -save_its 20000 -save_its_checkpoint 20000 -
+stretch_bnd_spring_fastening_time 100 -mount_type 1 -k_spr 20 -
+k_spr_fastening 2 k_spr_und 20 -with_true_incompres 0 -
+with_bulk_term 1 -with_isochoric_decomposition 1 -with_activation
+Input args:
+"./syomin_two_mesh" "-save_dir" "/home/marukhin_a_v/projects/carnum/cmake-build-Release/examples/SyominModel/results/" "-stims" "Slab{ 0 0 0 30 5 10 25 100 1 1 2000
+}" "-axis_sizes_mech" "4" "-axis_sizes_ep" "10" "-dt" "1" "-prob_iters" "1
+20 100 100" "-save_its" "20000" "-save_its_checkpoint" "20000" "-
+stretch_bnd_spring_fastening_time" "100" "-mount_type" "1" "-k_spr" "20" "-
+k_spr_fastening" "2" "k_spr_und" "20" "-with_true_incompres" "0" "-
+with_bulk_term" "1" "-with_isochoric_decomposition" "1" "-with_activation" 
+
+Warning: Unknown parameter name '
+stretch_bnd_spring_fastening_time' in command line arguments
+Warning: Unknown parameter name '
+stretch_bnd_spring_fastening_time' in command line argumentsWarning: Unknown parameter name '
+stretch_bnd_spring_fastening_time' in command line arguments
+
+Warning: Unknown parameter name '
+stretch_bnd_spring_fastening_time' in command line arguments
+End date: Mon Sep 30 19:22:16 MSK 2024

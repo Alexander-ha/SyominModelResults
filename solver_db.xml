@@ -1,0 +1,9 @@
+<SolverParameters>
+    <inner_mptiluc>
+        <mech  file="mech_solver.params"  />
+        <mndmn file="mndmn_solver.params" />
+    </inner_mptiluc>
+    <inner_ilu2>
+        <mndmn file="mndmn_solver.params" />
+    </inner_ilu2>
+</SolverParameters>
