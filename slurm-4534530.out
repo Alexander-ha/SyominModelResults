@@ -1,0 +1,193 @@
+/var/spool/slurmd/job4534530/slurm_script: line 2: SBATCH: command not found
+/var/spool/slurmd/job4534530/slurm_script: line 3: SBATCH: command not found
+/var/spool/slurmd/job4534530/slurm_script: line 4: SBATCH: command not found
+/var/spool/slurmd/job4534530/slurm_script: line 5: SBATCH: command not found
+Start date: Tue Oct  1 21:14:26 MSK 2024
+mpirun ./syomin_two_mesh -save_dir /home/marukhin_a_v/projects/carnum/cmake-build-Release/examples/SyominModel/results/ -stims Slab{ 0 0 0 30 5 10 25 100 1 1 2000} -axis_sizes_mech 4 -axis_sizes_ep 10 -dt 1 -prob_iters 1 20 100 100 -save_its 20000 -save_its_checkpoint 20000 -stretch_bnd_spring_fastening_time 100 -mount_type 1 -k_spr 20 -k_spr_fastening 2 k_spr_und 20 -with_true_incompres 0 -with_bulk_term 1 -with_isochoric_decomposition 1 -with_activation 1 -quad_order_ep 1 -quad_order_mech 3 -nlin_strategy 1 -nlin_params MaxSetupCalls 1 MaxSubSetupCalls 1 EtaForm 3 EtaConstValue 13 -ion_model DYNAMIC_SyominTsaturyan_theta -t 1000 -stretch_bnd 1 -stretch_k 0.01 -fix_underside 1 -view_ion_average A1 c deltan theta -save_act_time 1 -save_fiber_stretch 1 -save_fiber_velocity 1 -save_fiber_acceleration 1 -save_stat_delta 1 -save_prefix model -mech_continuation_factor 1.0 -lin_sol_db solver_db_2.xml -mech_time_scheme 1
+Input args:
+"./syomin_two_mesh" "-save_dir" "/home/marukhin_a_v/projects/carnum/cmake-build-Release/examples/SyominModel/results/" "-stims" "Slab{ 0 0 0 30 5 10 25 100 1 1 2000}" "-axis_sizes_mech" "4" "-axis_sizes_ep" "10" "-dt" "1" "-prob_iters" "1 20 100 100" "-save_its" "20000" "-save_its_checkpoint" "20000" "-stretch_bnd_spring_fastening_time" "100" "-mount_type" "1" "-k_spr" "20" "-k_spr_fastening" "2" "k_spr_und" "20" "-with_true_incompres" "0" "-with_bulk_term" "1" "-with_isochoric_decomposition" "1" "-with_activation" "1" "-quad_order_ep" "1" "-quad_order_mech" "3" "-nlin_strategy" "1" "-nlin_params" "MaxSetupCalls 1 MaxSubSetupCalls 1 EtaForm 3 EtaConstValue 13" "-ion_model" "DYNAMIC_SyominTsaturyan_theta" "-t" "1000" "-stretch_bnd" "1" "-stretch_k" "0.01" "-fix_underside" "1" "-view_ion_average" "A1 c deltan theta" "-save_act_time" "1" "-save_fiber_stretch" "1" "-save_fiber_velocity" "1" "-save_fiber_acceleration" "1" "-save_stat_delta" "1" "-save_prefix" "model" "-mech_continuation_factor" "1.0" "-lin_sol_db" "solver_db_2.xml" "-mech_time_scheme" "1" 
+
+save_pmf_strategy: 0
+mndmn_lin_sol_prefix: mndmn
+length_unit: 10
+mech_lin_sol_prefix: mech
+ion_initial_states: 
+mech_lin_sol_nm: inner_mptiluc
+v_init: -80
+save_its: 20000
+with_mech_feedback: 1
+conductivity: 0.5, 4.5
+k_spr_fastening: 2
+stretch_k: 0.01
+stretch_bnd: 1
+save_act_time: 1
+show_nlin_sol_params: 0
+with_bulk_term: 1
+with_true_incompres: 0
+scenario: 0
+axis_sizes_ep: 10
+fix_part_bnd: 0
+hemo_params: 
+with_exponential_titin: 1
+zero_velocity: 0
+t: 1000
+prob_iters: 1, 20, 100, 100
+nlin_strategy: 1
+stretch_bnd_spring_fastening_time: 100
+nlin_tol: 1e-08, 1e-08
+nlin_maxit: 200
+t_init: 0
+hemo_params_file: 
+ion_params: 
+k_spr_und: 20
+with_activation: 1
+with_isochoric_decomposition: 1
+max_fail_restart_level: 4
+mech_time_scheme: 1
+act_prms: 0, 1, 1, 0, 0, 1, 0
+density: 1
+mount_type: 1
+quad_order_mech: 3
+k_spr: 20
+ufem: P2
+save_fiber_velocity: 1
+length_scales: 9, 9, 1
+ion_model: DYNAMIC_SyominTsaturyan_theta
+mesh_file_mech: 
+hemo_init_states_file: 
+min_time_scale: 0.01
+mesh_file_ep: 
+save_dir: /home/marukhin_a_v/projects/carnum/cmake-build-Release/examples/SyominModel/results/
+mndmn_lin_params: 
+mesh_file_uni: 
+bulk_prms: 50
+pfem: P1
+elastic_prms: 0.55, 2.85
+quad_order_ep: 1
+quad_order_ep_stif: -1
+quad_order_ep_stim: -1
+quad_order_ep_mass: -1
+stims: Slab{ 0 0 0 30 5 10 25 100 1 1 2000}
+dt: 1
+load_checkpoint: 0
+save_prefix: model
+view_ion: 
+save_fiber_stretch: 1
+save_fiber_acceleration: 1
+save_stat_delta: 1
+axis_sizes_mech: 4
+save_its_checkpoint: 20000
+nlin_params: MaxSetupCalls 1 MaxSubSetupCalls 1 EtaForm 3 EtaConstValue 13
+mech_continuation_factor: 1
+fix_underside: 1
+hemo_init_states: 
+lin_sol_db: solver_db_2.xml
+try_repair_time_scale_its: 10
+mech_strict_dirichlet: 0
+view_ion_average: A1 c deltan theta
+mech_lin_params: 
+restart_time_scale: 0.5
+mndmn_lin_sol_nm: inner_mptiluc
+
+Running with MPI using
+Parallel devices: 
+	MPI: 3 processors; MPI version 3.1 on processor "c18"
+	OpenMP: 8 threads per processor; OpenMP version 201511
+
+--- Load/generate mesh ( wtime = 1.3113e-05s )
+--- Create mesh partition ( wtime = 2.18327s )
+--- Mark ghosts ( wtime = 4.33573s )
+Mark ghosts: 22.3288 <-> checks = 0.0138907s, finds = 22.0356s
+Mark ghosts: 2.23516 <-> checks = 0.0256433s, finds = 0.560205s
+--- Redistribute meshes ( wtime = 28.8998s )
+--- Exchange tag data ( wtime = 32.4602s )
+--- Coupled: Mesh statistics:
+    m_ep "mesh_ephy": Mesh info: #N 91091 #E 596890 #F 991800 #T 486000
+       0: #N 32032 #E 207431 #F 342800 #T 167400 #set 0 #tag 22
+       1: #N 33033 #E 214032 #F 353800 #T 172800 #set 0 #tag 22
+       2: #N 32032 #E 207431 #F 342800 #T 167400 #set 0 #tag 22
+    m_mech "mesh_mech": Mesh info: #N 6845 #E 41116 #F 65376 #T 31104
+       0: #N 2590 #E 15149 #F 23792 #T 11232 #set 0 #tag 22
+--- Monodomain: Initialize parameters ( wtime = 33.0805s )
+--- Monodomain: Associate with mesh "mesh_ephy"
+--- Ion: Initialize parameters ( wtime = 33.0805s )
+--- Ion: Add domain on mesh "mesh_ephy"
+       1: #N 2775 #E 16278 #F 25600 #T 12096 #set 0 #tag 22
+       2: #N 2590 #E 15149 #F 23792 #T 11232 #set 0 #tag 22
+--- Ion: Add domain on mesh "mesh_mech"
+--- Ion: Load ion model "DYNAMIC_SyominTsaturyan_theta"
+--- HemoDynamics: Initialize parameters ( wtime = 33.1432s )
+--- Mechanics: Initialize parameters ( wtime = 33.1433s )
+--- Mechanics: Associate with mesh "mesh_mech"
+--- Mechanics: Initialize boundary conditions ( wtime = 33.1433s )
+--- Generate new boundary marks
+Fixed boundary: #N 185 #E 472 #F 288 #T 0
+Underside boundary: #N 1369 #E 3960 #F 2592 #T 0
+Pressure boundary: #N 185 #E 472 #F 288 #T 0
+--- Monodomain: Create state tags
+--- Monodomain: Create solution tag "mndmn.V"
+--- Monodomain: Set initial value
+projection:
+	solved_succesful: #lits   5  residual 3.9805e-07, preconding = 0.101025s, solving = 0.037432s
+--- Ion: Create state tags
+--- HemoDynamics: Create state tags on mesh "mesh_mech"
+--- Mechanics: Create state tags
+--- Mechanics: Create solution tag "mech.u"
+--- Mechanics: Create solution tag "mech.ext.d2u_dt2"
+--- Mechanics: Create solution tag "mech.ext.du_dt"
+--- Mechanics: Create solution tag "mech.ext.u"
+--- Mechanics: Create solution tag "mech.ext.dt_prev"
+--- Coupled: Link Ion -> Monodomain submodels ( wtime = 33.452s )
+--- Coupled: Link Ion -> Mechanics submodels ( wtime = 33.452s )
+--- Coupled: Link Mechanics -> HemoDynamics submodels ( wtime = 33.4523s )
+--- Coupled: Link HemoDynamics -> Mechanics submodels ( wtime = 33.4523s )
+--- Coupled: Create ep mesh <-> mech mesh interpolation map ( wtime = 33.4523s )
+--- Coupled: Link Monodomain -> Ion submodels ( wtime = 36.4836s )
+--- Coupled: Link Mechanics -> Ion submodels ( wtime = 36.4836s )
+--- Monodomain: Prepare problem
+--- Mechanics: Prepare problem
+--- HemoDynamics: Prepare problem ( wtime = 38.5842s )
+--- Hemo set pressure = 0
+--- Ion: Prepare problem ( wtime = 38.585s )
+--- Monodomain: Assemble monodomain matrix
+--- Monodomain: Set preconditioner for linear solver
+--- Mechanics: Assemble mechanical matrix template
+--- Mechanics: Initialize linear solver
+--- Mechanics: Initialize nonlinear solver
+
+[KINSOL ERROR]  KINSetEtaConstValue
+  eta out of range.
+
+
+[KINSOL ERROR]  KINSetEtaConstValue
+  eta out of range.
+
+
+[KINSOL ERROR]  KINSetEtaConstValue
+  eta out of range.
+
+terminate called after throwing an instance of 'std::runtime_error'
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Can't find ion state "deltan"
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Can't find ion state "deltan"
+  what():  Can't find ion state "deltan"
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 172191 RUNNING AT c18
+=   KILLED BY SIGNAL: 6 (Aborted)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 172192 RUNNING AT c18
+=   KILLED BY SIGNAL: 6 (Aborted)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 172193 RUNNING AT c18
+=   KILLED BY SIGNAL: 6 (Aborted)
+===================================================================================
+End date: Tue Oct  1 21:15:06 MSK 2024

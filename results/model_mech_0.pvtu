@@ -19,6 +19,5 @@
 		<Piece Source="model_mech_0p1.vtu"/>
 		<Piece Source="model_mech_0p2.vtu"/>
 		<Piece Source="model_mech_0p3.vtu"/>
-		<Piece Source="model_mech_0p4.vtu"/>
 	</PUnstructuredGrid>
 </VTKFile>

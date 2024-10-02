@@ -1,0 +1,8 @@
+/var/spool/slurmd/job4534529/slurm_script: line 2: SBATCH: command not found
+/var/spool/slurmd/job4534529/slurm_script: line 3: SBATCH: command not found
+/var/spool/slurmd/job4534529/slurm_script: line 4: SBATCH: command not found
+/var/spool/slurmd/job4534529/slurm_script: line 5: SBATCH: command not found
+Start date: Tue Oct  1 21:13:17 MSK 2024
+mpirun ./syomin_two_mesh -save_dir /home/marukhin_a_v/projects/carnum/cmake-build-Release/examples/SyominModel/results/ -stims Slab{ 0 0 0 30 5 10 25 100 1 1 2000} -axis_sizes_mech 4 -axis_sizes_ep 10 -dt 1 -prob_iters 1 20 100 100 -save_its 20000 -save_its_checkpoint 20000 -stretch_bnd_spring_fastening_time 100 -mount_type 1 -k_spr 20 -k_spr_fastening 2 k_spr_und 20 -with_true_incompres 0 -with_bulk_term 1 -with_isochoric_decomposition 1 -with_activation 1 -quad_order_ep 1 -quad_order_mech 3 -nlin_strategy 1 -nlin_params MaxSetupCalls 1 MaxSubSetupCalls 1 EtaForm 3 EtaConstValue 13 -ion_model DYNAMIC_SyominTsaturyan_theta -t 1000 -stretch_bnd 1 -stretch_k 0.01 -fix_underside 1 -view_ion_average A1 c deltan theta -save_act_time 1 -save_fiber_stretch 1 -save_fiber_velocity 1 -save_fiber_acceleration 1 -save_stat_delta 1 -save_prefix model -mech_continuation_factor 1.0 -lin_sol_db solver_db_2.xml -mech_time_scheme 1
+/var/spool/slurmd/job4534529/slurm_script: line 8: mpirun: command not found
+End date: Tue Oct  1 21:13:17 MSK 2024

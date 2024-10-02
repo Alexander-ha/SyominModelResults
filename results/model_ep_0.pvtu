@@ -21,6 +21,5 @@
 		<Piece Source="model_ep_0p1.vtu"/>
 		<Piece Source="model_ep_0p2.vtu"/>
 		<Piece Source="model_ep_0p3.vtu"/>
-		<Piece Source="model_ep_0p4.vtu"/>
 	</PUnstructuredGrid>
 </VTKFile>
